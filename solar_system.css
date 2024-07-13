@@ -1,0 +1,158 @@
+body {
+  background-image: url(bg.jpg);
+  margin: 0;
+}
+
+.sun {
+  position: relative;
+  margin: 120px 500px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+}
+
+.earth {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  animation: earth 8s linear infinite normal;
+}
+
+.earth > img {
+  width: 100px;
+  height: 200px;
+}
+
+
+@keyframes earth {
+  0% {
+    left: 0px;
+    transform: scale(1);
+  }
+  25% {
+    left: 50%;
+    transform: scale(0.5);
+  }
+  50% {
+    left: 90%;
+    transform: scale(1);
+  }
+  75% {
+    left: 50%;
+    transform: scale(1.5);
+  }
+  100% {
+    z-index: 3;
+    left: 0px;
+    transform: scale(1);
+  }
+}
+
+.venus {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  animation: venus 8s linear 3s infinite normal;
+}
+.venus > img {
+    width: 100px;
+    height: 100px;
+  }
+
+@keyframes venus {
+  0% {
+    left: 0px;
+    transform: scale(1);
+  }
+  25% {
+    left: 50%;
+    transform: scale(0.5);
+  }
+  50% {
+    left: 90%;
+    transform: scale(1);
+  }
+  75% {
+    left: 50%;
+    transform: scale(1.5);
+  }
+  100% {
+    z-index: 3;
+
+    left: 0px;
+    transform: scale(1);
+  }
+}
+
+.mars {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  animation: mars 8s linear 6s infinite normal;
+}
+
+.mars > img {
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes mars {
+  0% {
+    right: 0px;
+    transform: scale(1);
+    z-index: 3;
+  }
+  25% {
+    right: 50%;
+    transform: scale(1.5);
+  }
+  50% {
+    right: 90%;
+    transform: scale(1);
+  }
+  75% {
+    right: 50%;
+    transform: scale(1);
+  }
+  100% {
+    right: 0px;
+    transform: scale(1);
+  }
+}
+
+.jupiter {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  animation: jupiter 8s linear 9s infinite normal;
+}
+
+.jupiter > img {
+  width: 100px;
+  height: 90px;
+}
+
+@keyframes jupiter {
+  0% {
+    right: 0px;
+    transform: scale(1);
+    z-index: 3;
+  }
+  25% {
+    right: 50%;
+    transform: scale(1.5);
+  }
+  50% {
+    right: 90%;
+    transform: scale(1);
+  }
+  75% {
+    right: 50%;
+    transform: scale(1);
+  }
+  100% {
+    right: 0px;
+    transform: scale(1);
+  }
+}
